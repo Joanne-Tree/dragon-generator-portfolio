@@ -1,4 +1,3 @@
-
 const dragonBodySize = ["small", "medium", "big"];
 const dragonBodyShape = ["rounded", "noodle", "sharp"];
 const dragonBodyColour = ["black", "blue", "green", "brown", "grey", "red"];
