@@ -1,9 +1,13 @@
-class App(){
+class Dragon {
 	constructor(){
 		this.dragon = "A dragon"
 	}
 }
 
-export default App;
+function createDragon(){
+	const newDragon = new Dragon();
+	console.log(newDragon.dragon);
+	document.getElementById("root").innerHTML = newDragon.dragon;
+}
 
 
