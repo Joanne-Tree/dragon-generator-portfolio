@@ -11,3 +11,14 @@ dragonDiet.pickRandom(["herbivore", "omnivore", "carnivore"]),
 dragonFightTactic.pickRandom(["hide", "run", "bite", "scratch", "breatheFire",
  "roar", "stretchWings", "dustCloud"]),
 dragonSocial.pickRandom(["loner", "familial", "all the dragons"])
+
+// from stackOverflow
+
+const randomElement = array[Math.floor(Math.random() * array.length)];
+
+
+
+const months = ["January", "February", "March", "April", "May", "June", "July"];
+
+const random = Math.floor(Math.random() * months.length);
+console.log(random, months[random]);
