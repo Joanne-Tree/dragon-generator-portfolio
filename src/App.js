@@ -61,14 +61,19 @@ console.log(randomSocial, dragonSocial[randomSocial]);
 
 
 const dragonObject = {
-	makeDragon: function(){
-		const myDragon = "The dragon has a " + dragonBodySize[randomBodySize] + ", " + dragonBodyShape[randomBodyShape] + ", " + dragonBodyColour[randomBodyColour] + ", " + dragonSkinType[randomSkinType] + " body. It has " + dragonHeadNumber[randomHeadNumber] + " heads. It has " + dragonHornNumber[randomHornNumber] + " " + dragonHornType[randomHornType] + " horns. It has " + dragonWingsNumber[randomWingsNumber] + " wings, " + dragonLegs[randomLegs] + " legs, and a " + dragonTailLength[randomTailLength] + " tail. Diet: " + dragonDiet[randomDiet] + ". FightTactic: " + dragonFightTactic[randomFightTactic] + ". Social: " + dragonSocial[randomSocial] + ". "
+	makeDragon: function (){
+		const myDragon = "The dragon has a " + dragonBodySize[randomBodySize] + ", " + dragonBodyShape[randomBodyShape] + ", " + dragonBodyColour[randomBodyColour] + ", " + dragonSkinType[randomSkinType] + " body. Heads: " + dragonHeadNumber[randomHeadNumber] + ". Number of Horns: " + dragonHornNumber[randomHornNumber] + ". Type of Horn: " + dragonHornType[randomHornType] + ". Wings: " + dragonWingsNumber[randomWingsNumber] + ". Legs: " + dragonLegs[randomLegs] + ". Tail Length: " + dragonTailLength[randomTailLength] + ". Diet: " + dragonDiet[randomDiet] + ". FightTactic: " + dragonFightTactic[randomFightTactic] + ". Social: " + dragonSocial[randomSocial] + ". "
 		return myDragon;
 	}
 }
 
 const myRandomDragon = dragonObject.makeDragon();
 document.write(myRandomDragon);
+
+function createDragon1(){
+	return myRandomDragon;
+}
+
 	
 		
 		
@@ -78,7 +83,7 @@ function createDragon(){
 	const newDragon = new Dragon();
 	// to do... call the function that returns a dragon object, then assign value returned from function
 	// to a new value
-	returnDragonObject();
+	createDragon1();
 	const newDragon1 = returnDragonObject();
 	
 	console.log(newDragon.dragon);
