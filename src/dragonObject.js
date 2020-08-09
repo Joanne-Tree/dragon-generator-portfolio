@@ -38,21 +38,6 @@ const randomFightTactic = Math.floor(Math.random() * dragonFightTactic.length);
 const dragonSocial = ["loner", "familial", "super social"];
 const randomSocial = Math.floor(Math.random() * dragonSocial.length);
 
-console.log(randomBodySize, dragonBodySize[randomBodySize]);
-console.log(randomBodyShape, dragonBodyShape[randomBodyShape]);
-console.log(randomBodyColour, dragonBodyColour[randomBodyColour]);
-console.log(randomSkinType, dragonSkinType[randomSkinType]);
-console.log(randomHeadNumber, dragonHeadNumber[randomHeadNumber]);
-console.log(randomHornType, dragonHornType[randomHornType]);
-console.log(randomHornNumber, dragonHornNumber[randomHornNumber]);
-console.log(randomWingsNumber, dragonWingsNumber[randomWingsNumber]);
-console.log(randomTailLength, dragonTailLength[randomTailLength]);
-console.log(randomLegs, dragonLegs[randomLegs]);
-console.log(randomDiet, dragonDiet[randomDiet]);
-console.log(randomFightTactic, dragonFightTactic[randomFightTactic]);
-console.log(randomSocial, dragonSocial[randomSocial]);
-
-
 const dragonObject = {
 	makeDragon: function (){
 		const myDragon = "The dragon has a " + dragonBodySize[randomBodySize] + ", " + dragonBodyShape[randomBodyShape] + ", " + dragonBodyColour[randomBodyColour] + ", " + dragonSkinType[randomSkinType] + " body. Heads: " + dragonHeadNumber[randomHeadNumber] + ". Number of Horns: " + dragonHornNumber[randomHornNumber] + ". Type of Horn: " + dragonHornType[randomHornType] + ". Wings: " + dragonWingsNumber[randomWingsNumber] + ". Legs: " + dragonLegs[randomLegs] + ". Tail Length: " + dragonTailLength[randomTailLength] + ". Diet: " + dragonDiet[randomDiet] + ". FightTactic: " + dragonFightTactic[randomFightTactic] + ". Social: " + dragonSocial[randomSocial] + ". "
@@ -61,8 +46,10 @@ const dragonObject = {
 }
 
 const myRandomDragon = dragonObject.makeDragon();
-document.write(myRandomDragon);
 
 function createDragon(){
+	document.write(myRandomDragon);
 	return myRandomDragon;
 }
+
+document.getElementById("root").addEventListener("click", createDragon);

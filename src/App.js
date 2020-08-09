@@ -5,6 +5,7 @@ class Dragon {
 		}
 }
 	// to do...make function that returns the dragon object
+createDragon1(){
 const dragonBodySize = ["small", "medium", "big"];
 const randomBodySize = Math.floor(Math.random() * dragonBodySize.length);
 
@@ -70,25 +71,20 @@ const dragonObject = {
 const myRandomDragon = dragonObject.makeDragon();
 document.write(myRandomDragon);
 
-function createDragon1(){
 	return myRandomDragon;
-}
-
-	
-		
-		
+	}
 }
 
 function createDragon(){
 	const newDragon = new Dragon();
 	// to do... call the function that returns a dragon object, then assign value returned from function
 	// to a new value
-	createDragon1();
-	const newDragon1 = returnDragonObject();
+	Dragon.createDragon1();
+	
 	
 	console.log(newDragon.dragon);
 	// update the newDragon.dragon to this new variable
-	newDragon.dragon = newDragon1;
+	
 	document.getElementById("root").innerHTML = newDragon.dragon.type;
 
 	// Bonus points: function that will format dragon object into a descriptive string of text.
