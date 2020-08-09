@@ -48,8 +48,7 @@ const dragonObject = {
 const myRandomDragon = dragonObject.makeDragon();
 
 function createDragon(){
-	document.write(myRandomDragon);
-	return myRandomDragon;
+	document.getElementById("root").innerHTML = myRandomDragon;
 }
 
 document.getElementById("root").addEventListener("click", createDragon);
