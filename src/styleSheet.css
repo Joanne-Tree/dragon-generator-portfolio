@@ -1,0 +1,28 @@
+h1 {
+    font: Arial;
+    color: green;
+    background: black
+
+}
+#container{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: static;
+    
+    
+}
+#dragon{
+    margin-right: 5px;
+    margin-top: 10px;
+}
+#reset{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#root{
+    align-content: center;
+    padding-left: 8px;
+}
