@@ -1,18 +1,20 @@
 <html>
-<head>
-	<link rel="stylesheet" href="../src/styleSheet.css">
-	<title>Random Dragon Generator</title>
-	
-</head>
-<body>
-	<noscript> You need to enable Javascript to run this app</noscript>
-	
-	<h1>Create My Random Dragon</h1>
-	
-	
-	<div id="container"><div id="root"></div>
-	<button  id="dragon" onclick="createDragon();" type="button;">Click here to generate a random dragon!</button>
-	<button id="reset" type="button;" onclick="window.location.reload();">Reset</button></div>
-	<script src="../src/dragonObject.js"></script>
-</body>
+	<head>
+		<link rel="stylesheet" href="../src/styleSheet.css">
+		<title>Random Dragon Generator</title>
+	</head>
+	<body>
+		<noscript> You need to enable Javascript to run this app</noscript>
+		<div id="container">
+			<h1>Create My Random Dragon</h1>
+			<div id="text-container">
+				<div id="root"></div>
+				<div id="button-container">	
+					<button  id="dragon" onclick="createDragon();" type="button;">Click here to generate a random dragon!</button>
+					<button id="reset" type="button;" onclick="window.location.reload();">Reset</button>
+				</div>
+			</div>
+		</div>
+		<script src="../src/dragonObject.js"></script>
+	</body>
 </html>
